@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            height: auto;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(0deg, rgb(0, 191, 255), rgb(255, 0, 247));
+        }
+.row{
+  .col-md-4{
+    margin-bottom:20px;
+  }
+}
+.crypto-table {
+  border-collapse: separate;
+  border-spacing: 0 1em;
+  padding: 10px;
+  thead {
+    th {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+  tbody tr {
+    background: #fff;
+    -webkit-box-shadow: 0 1px 15px 1px rgba(62, 57, 107, 0.07);
+    box-shadow: 0 1px 15px 1px rgba(62, 57, 107, 0.07);
+    height: 50px;
+
+    td > * {
+      vertical-align: middle;
+    }
+    td:first-child {
+      -moz-border-radius: 10px 0 0 10px;
+      -webkit-border-radius: 10px 0 0 10px;
+    }
+    td:last-child {
+      -moz-border-radius: 0 10px 10px 0;
+      -webkit-border-radius: 0 10px 10px 0;
+    }
+    td img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+.card.crypto-gradient-card {
+  color: #fff;
+  border: 0;
+}
+.gradient-1 {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  background: #eb3349; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f45c43,
+    #eb3349
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f45c43,
+    #eb3349
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.gradient-2 {
+  -webkit-box-shadow: 0 1px 15px 1px #29ffc6;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  background: #1cd8d2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #93edc7,
+    #1cd8d2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #93edc7,
+    #1cd8d2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.gradient-3 {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  background: #00d2ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3a7bd5,
+    #00d2ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3a7bd5,
+    #00d2ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+table, td, th {  
+  border: 3px solid #ddd;
+  text-align: left;
+  border-radius: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+
+    </style>
+<div class="container-fluid" style="margin-top:10px ">
+<!-- 
+  <div class="row" style="font-family: sans-serif  ">
+    <div class="col-md-4">
+      <div class="card crypto-gradient-card gradient-1">
+        <div class="card-body">
+          Market Cap:
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card crypto-gradient-card gradient-2">
+        <div class="card-body">
+          Price:
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card crypto-gradient-card gradient-3">
+        <div class="card-body">
+          Volume(24h):
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table crypto-table">
+        <thead>
+          <tr style="font-family: sans-serif  ">
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Symbol</th>
+            <th scope="col">Market Cap</th>
+            <th scope="col">Price</th>
+            <th scope="col">Supply</th>
+            <th scope="col">Vol(24h)</th>
+            <th scope="col">%(24h)</th>
+          </tr>
+        </thead>
+        <tbody style="font-family: sans-serif  ">
+          <tr>
+            <td>1</td>
+            <td><img src="/bitcoin.png" style="width: 180px;" /><span class="text-warning"> Bitcoin</span></td>
+            <td>BTC</td>
+            <td>$134.655,333</td>
+            <td class="text-warning">$768.655</td>
+            <td class="text-warning">$122.998</td>
+            <td class="text-warning">$5.443.233,600</td>
+            <td class="text-success">%5.54 <i class="fa fa-arrow-up"></i></td>
+          </tr>
+          <tr>
+
+            <td>2</td>
+            <td><img src="/eth1.png" style="width: 200px;" /> <span class="text-warning"> ETHEREUM</span></td>
+            <td>ETH</td>
+            <td>$134.655,333</td>
+            <td class="text-warning">$768.655</td>
+            <td class="text-warning">$122.998</td>
+            <td class="text-warning">$5.443.233,600</td>
+            <td class="text-danger">%8.14 <i class="fa fa-arrow-down"></i></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><img src="/dogcoin.png" style="width: 200px;" /> <span class="text-warning"> DOGCOIN</span></td>
+            <td>DOG </td>
+            <td> $134.655,333</td>
+            <td class="text-warning">$768.655</td>
+            <td class="text-warning">$122.998</td>
+            <td class="text-warning">$5.443.233,600</td>
+            <td class="text-success">%6.85 <i class="fa fa-arrow-up"></i></td>
+          </tr>
+
+            <td>4</td>
+            <td><img src="/usd.png" style="width: 200px;" /> <span class="text-warning">USD</span></td>
+            <td>USD</td>
+            <td>$134.655,333</td>
+            <td class="text-warning">$768.655</td>
+            <td class="text-warning">$122.998</td>
+            <td class="text-warning">$5.443.233,600</td>
+            <td class="text-success">%6.85 <i class="fa fa-arrow-up"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>    
+</body>
+
+</html>

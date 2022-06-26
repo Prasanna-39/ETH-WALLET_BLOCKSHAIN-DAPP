@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <footer>
+        <div>
+          <style>
+            body, #chart-area, #widget-container, .tv-main-panel {background: #000;}
+    .chart-page .chart-container {border: black solid 0;}
+    
+    div {width: 100%;height:100%; margin:0 auto;}
+          </style>
+          <!-- TradingView Widget BEGIN -->
+          <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
+          <script type="text/javascript">
+          new TradingView.widget({
+            "autosize": true,
+            "symbol": "COINBASE:BTCUSD",
+            "interval": "D",
+            "timezone": "Etc/UTC",
+            "theme": "Black",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "rgba(0, 0, 0, 1)",
+            "hide_top_toolbar": true,
+            "save_image": false,
+            "hideideas": true
+          });
+          </script>
+          <!-- TradingView Widget END -->
+          </div></footer>  
+    
+</body>
+</html>
